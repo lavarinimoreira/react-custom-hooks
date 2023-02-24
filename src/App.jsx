@@ -1,11 +1,8 @@
-import React from 'react'
-import Wait  from './components/Wait'
-
-
+import React from "react";
+import Wait from "./components/Wait";
+import WindowDimensions from "./components/WindowDimensions";
 
 const App = () => {
-
-    
   return (
     <div className="App">
       <Wait
@@ -13,8 +10,10 @@ const App = () => {
         placeholder={<p>Waiting...</p>}
         ui={<p>This text should appear after 3 seconds.</p>}
       />
-    </div>
-  )
-}
 
-export default App
+      <WindowDimensions />
+    </div>
+  );
+};
+
+export default App;

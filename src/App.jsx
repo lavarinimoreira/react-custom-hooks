@@ -1,4 +1,5 @@
 import React from "react";
+import Fetch from "./components/Fetch";
 import Wait from "./components/Wait";
 import WindowDimensions from "./components/WindowDimensions";
 
@@ -12,6 +13,8 @@ const App = () => {
       />
 
       <WindowDimensions />
+
+      <Fetch />
     </div>
   );
 };
